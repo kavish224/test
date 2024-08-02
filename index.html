@@ -13,7 +13,7 @@
 </body>
 <script>
     async function populate(){
-        const data = await fetch("http://13.233.114.199:8000/api/v1/video/");
+        const data = await fetch("https://13.233.114.199:8000/api/v1/video/");
         const txt = await data.text();
         document.getElementById("container").innerHTML = txt;
     }
